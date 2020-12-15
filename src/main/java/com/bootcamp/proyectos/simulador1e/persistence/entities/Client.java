@@ -20,4 +20,13 @@ public class Client {
 
     @Column(name = "nombres")
     private String nombres;
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "dni='" + dni + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", nombres='" + nombres + '\'' +
+                '}';
+    }
 }
